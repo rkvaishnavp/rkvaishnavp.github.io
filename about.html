@@ -2,77 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Img/favicon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Vaishnav Prasad</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Img/favicon.png" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- Navbar -->
-    <div id="navbar"></div>
+  <!-- Navbar -->
+  <div id="navbar"></div>
 
-    <!-- About Section -->
-    <section class="about-section py-5">
-        <div class="container">
-            <h2 class="display-5 text-danger">About Me</h2>
-            <hr>
-            <div data-aos="zoom-in-down" class="row align-items-center">
-                <div class="col-md-3">
-                    <div class="animated-border">
-                        <img src="Img/profile.jpg" alt="Profile Image" class="rounded profile mb-4 mx-4 mt-4 mb-4"
-                            width="220">
-                    </div>
-                </div>
-                <div class="col-md-8 mt-4">
-                    <h2 class="display-6 text-danger">I'm Vaishnav Prasad,</h2>
-                    <p class="lead">System Hardware Engineer focused on high-performance, reliable SoCs. Experienced in
-                        functional verification, LPDDR4/4X memory bring-up, and custom ISA validation using Verilog,
-                        SystemVerilog, UVM, C/C++, and Python.</p>
-
-                    <p class="lead">Strong background in digital design, embedded systems, and computer architecture,
-                        delivering optimized hardware solutions under tight timelines.</p>
-
-                    <p class="lead">Passionate about emerging tech, RISC-V, chiplets, AI/ML in hardware verification,
-                        and hands-on PC and FPGA projects. Continuously exploring hardware/software co-design and
-                        pushing innovation beyond standard workflows.</p>
-                    <!-- <a href="resume.pdf" class="btn btn-outline-danger mt-4" download>Download Resume</a> -->
-                </div>
-                <h3 class="mt-5 text-danger">Work Experience</h3>
-                <hr>
-                <div class="work-experience">
-                    <div class="mb-4">
-                        <h5 class="">Hardware Engineer – Kinara AI (Part of NXP Semiconductors as of June
-                            2025)</h5>
-                        <p class="mb-1"><strong>Hyderabad, Telangana</strong> | <em>June 2024 – Present</em></p>
-                        <ul>
-                            <li>Functional Verification of Custom TIE Instructions for Cadence Xtensa Processor</li>
-                            <li>LPDDR4/4X Memory Interface Validation on Cadence LPDDR4/4x Ctrl+PHY Memory Subsystem
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!-- About Section -->
+  <section class="about-section py-5">
+    <div class="container">
+      <h2 class="display-5 text-danger">About Me</h2>
+      <hr>
+      <div data-aos="zoom-in-down" class="row align-items-center">
+        <div class="col-md-3">
+          <div class="animated-border">
+            <img src="Img/profile.jpg" alt="Profile Image" class="rounded profile mb-4 mx-4 mt-4" width="220">
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <div id="footer"></div>
+        <div class="col-md-8 mt-4">
+          <h2 class="display-6 text-danger">I'm Vaishnav Prasad,</h2>
+          <p class="lead">
+            System Hardware Engineer (Design Verification) focused on high-performance, reliable SoCs.
+            Experienced in functional verification, LPDDR4/4X memory bring-up, and custom ISA validation
+            using Verilog, SystemVerilog, UVM, C/C++, and Python.
+          </p>
+          <p class="lead">
+            Strong background in digital design, embedded systems, and computer architecture — delivering
+            optimized hardware solutions under tight timelines. Passionate about RISC-V, chiplets, and
+            hardware/software co-design.
+          </p>
+          <a href="Vaishnav_Resume.pdf" class="btn btn-outline-danger mt-3" download>Download Resume</a>
+        </div>
+      </div>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        $(function () {
-            $('#navbar').load('navbar.html');
-            $('#footer').load('footer.html');
-        });
-    </script>
+      <!-- Work Experience -->
+      <h3 class="mt-5 text-danger">Work Experience</h3>
+      <hr>
+      <div data-aos="fade-up">
+        <div class="mb-4">
+          <h5>System Hardware Engineer – NXP Semiconductors (formerly Kinara AI)</h5>
+          <p><strong>Hyderabad, Telangana</strong> | <em>June 2024 – Present</em></p>
+          <ul>
+            <li>Developed SystemVerilog-based constrained-random verification for a reconfigurable processor.</li>
+            <li>Validated custom TIE load/store/move instructions via opcode and operand coverage tracking.</li>
+            <li>Root-caused instruction mismatches via waveform and ISS comparison.</li>
+            <li>Maintained automated regression infrastructure for coverage and test tracking.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <h3 class="mt-5 text-danger">Education</h3>
+      <hr>
+      <div data-aos="fade-up">
+        <h5>B.E. Electronics & Instrumentation</h5>
+        <p><strong>BITS Pilani, K.K. Birla Goa Campus</strong> | <em>Oct 2020 – May 2024</em></p>
+        <p>Relevant Coursework: Computer Architecture, Digital & Analog VLSI, OS, OOPs, Network Programming, Microprocessor Programming & Interfacing.</p>
+      </div>
+
+      <!-- Technical Skills -->
+      <h3 class="mt-5 text-danger">Technical Skills</h3>
+      <hr>
+      <div data-aos="fade-up">
+        <ul class="lead">
+          <li><strong>Languages:</strong> SystemVerilog, Verilog, UVM, C, C++, Python</li>
+          <li><strong>Protocols:</strong> AXI4, UART</li>
+          <li><strong>Tools:</strong> Questasim, Xilinx Vivado, Xtensa Xplorer</li>
+        </ul>
+      </div>
+
+      <!-- Projects -->
+      <h3 class="mt-5 text-danger">Projects</h3>
+      <hr>
+      <div data-aos="fade-up">
+        <div class="mb-4">
+          <h5><a href="https://github.com/rkvaishnavp/YARC" target="_blank">RISC-V CPU Core</a></h5>
+          <p>Designed single-cycle and 5-stage pipelined RV32I CPU cores in Verilog with AXI4-Lite compatible memory modules.</p>
+        </div>
+
+        <div class="mb-4">
+          <h5><a href="https://github.com/rkvaishnavp/SingleLayerMNIST" target="_blank">Handwritten Digit Recognition on FPGA</a></h5>
+          <p>Built FPGA-based MNIST digit recognition accelerator using UART and BlockRAM for parallel inference execution.</p>
+        </div>
+
+        <div class="mb-4">
+          <h5><a href="https://github.com/rkvaishnavp/Display-and-VGA-Core" target="_blank">Display and VGA Core</a></h5>
+          <p>Created VGA signal generator core in Verilog; validated using Python scripts for bit-accurate image reproduction.</p>
+        </div>
+
+        <div class="mb-4">
+          <h5><a href="https://github.com/rkvaishnavp/uart-core" target="_blank">Simple Adder Core using UART and BlockRAM</a></h5>
+          <p>Implemented UART-based FPGA adder core with data storage in BlockRAM and serial PC communication.</p>
+        </div>
+
+        <div class="mb-4">
+          <h5><a href="https://github.com/rkvaishnavp/OS-Project" target="_blank">Linux Kernel System Call & Device Driver</a></h5>
+          <p>Added custom system call to Linux Kernel 5.4.0 and developed a power-aware display brightness driver.</p>
+        </div>
+      </div>
+
+      <!-- Contact Links -->
+      <h3 class="mt-5 text-danger">Connect</h3>
+      <hr>
+      <p class="lead">
+        📧 <a href="mailto:rkvaishnavp@gmail.com">rkvaishnavp@gmail.com</a><br>
+        🌐 <a href="https://rkvp.in" target="_blank">rkvp.in</a><br>
+        💼 <a href="https://linkedin.com/in/rkvaishnavp" target="_blank">linkedin.com/in/rkvaishnavp</a><br>
+        💻 <a href="https://github.com/rkvaishnavp" target="_blank">github.com/rkvaishnavp</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(function () {
+      $('#navbar').load('navbar.html');
+      $('#footer').load('footer.html');
+    });
+    AOS.init();
+  </script>
+
 </body>
-
 </html>
